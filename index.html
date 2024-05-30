@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic design form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  </head>
+  <body>
+    <header class="wrapper mt-28">
+      <div class="form max-w-3xl mx-auto shadow-lg mb-20 rounded">
+        <h1 class="text-center text-2xl pt-8 font-medium">Dynamic Html / Css Template Form</h1>
+        <form
+          id="template-form"
+          class="items-center p-10 flex flex-col gap-5 mt-5"
+        >
+          <div class="flex flex-wrap gap-2 items-center w-full">
+            <label for="heading" class="block">Heading:</label>
+            <input
+              type="text"
+              id="heading"
+              maxlength="40"
+              class="w-full p-3 border border-gray-400 rounded bg-transparent focus:border-gray-600"
+              required
+            />
+          </div>
+
+          <div class="flex flex-wrap gap-2 items-center w-full">
+            <label for="subheading" class="block">Subheading:</label>
+            <input
+              type="text"
+              id="subheading"
+              maxlength="60"
+              class="w-full p-3 border border-gray-400 rounded bg-transparent focus:border-gray-600"
+              required
+            />
+          </div>
+
+          <div class="flex flex-wrap gap-2 items-center w-full">
+            <label for="email" class="block">Email:</label>
+            <input
+              type="email"
+              id="email"
+              class="w-full p-3 border border-gray-400 rounded bg-transparent focus:border-gray-600"
+              required
+            />
+          </div>
+
+          <div class="flex flex-wrap gap-2 items-center w-full">
+            <label for="phone" class="block">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              class="w-full p-3 border border-gray-400 rounded bg-transparent focus:border-gray-600"
+              required
+            />
+          </div>
+
+          <div class="flex flex-wrap gap-2 items-center w-full">
+            <label for="company-name" class="block">Company Name:</label>
+            <input
+              type="text"
+              id="company-name"
+              class="w-full p-3 border border-gray-400 rounded bg-transparent focus:border-gray-600"
+              required
+            />
+          </div>
+          <div class="flex flex-wrap gap-2 items-center w-full">
+            <label for="action-button" class="block">Action Button:</label>
+            <input
+              type="text"
+              id="action-button"
+              maxlength="15"
+              class="w-full p-3 border border-gray-400 rounded bg-transparent focus:border-gray-600"
+              required
+            />
+          </div>
+
+          <div class="flex flex-wrap gap-2 items-center w-full">
+            <label for="company-logo" class="block">Company Logo:</label>
+            <input
+              type="file"
+              id="company-logo"
+              accept="image/*"
+              class="w-full p-3 border border-gray-400 rounded bg-transparent focus:border-gray-600"
+              required
+            />
+          </div>
+
+          <div class="flex flex-wrap gap-2 items-center w-full">
+            <label for="template-image" class="block">Template Image:</label>
+            <input
+              type="file"
+              id="template-image"
+              accept="image/*"
+              class="w-full p-3 border border-gray-400 rounded bg-transparent focus:border-gray-600"
+              required
+            />
+          </div>
+
+          <div class="flex gap-5 w-full">
+            <div class="flex gap-5 items-center w-full">
+              <label for="primary-color" class="block">Primary Colour:</label>
+              <input
+                type="color"
+                id="primary-color"
+                class="p-3 bg-blue-900 w-20 rounded"
+                required
+              />
+            </div>
+
+            <div class="flex gap-5 items-center w-full">
+              <label for="secondary-color" class="block"
+                >Secondary Colour:</label
+              >
+              <input
+                type="color"
+                id="secondary-color"
+                class="p-3 bg-red-700 w-20 rounded"
+                required
+              />
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onclick="generateCard()"
+            class="bg-green-600 max-w-md text-white p-2 font-medium rounded w-full mt-8 hover:bg-green-700 duration-300"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
