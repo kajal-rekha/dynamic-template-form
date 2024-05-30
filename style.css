@@ -10,15 +10,45 @@
 body {
   overflow-x: hidden;
   background-color: #0f172a;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .wrapper {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 
-
-.form{
+.form {
   background-color: bisque;
+}
+
+.card {
+  height: 660px;
+  width: 900px;
+}
+.image-frames {
+  position: absolute;
+  top: 8rem;
+  left: 33rem;
+}
+.image-frame {
+  width: 18rem;
+  height: 30rem;
+  box-shadow: 0 0 5rem #181616f6;
+  position: absolute;
+  transform: rotate(-8deg);
+  transform-origin: bottom left;
+  transition: 0.5s;
+  top: -2.5rem;
+  z-index: 2;
+}
+.image-frame:nth-child(2) {
+  transform: rotate(5deg);
+  width: 20rem;
+  height: 33rem;
+  top: -4rem;
+  left: 0rem;
+  transform-origin: right bottom;
+  border: 0.2rem solid #e70909;
+  z-index: 1;
 }
